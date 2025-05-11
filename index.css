@@ -25,7 +25,7 @@ body{
     box-sizing: border-box;
     display: grid;
     position: relative;
-    background: url(/imagenes/index/bosque.jpg)center/cover no-repeat;
+    background: url(imagenes/index/bosque.jpg)center/cover no-repeat;
     width: 100%;
     height: auto;
     margin-top: 100px;
