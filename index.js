@@ -32,7 +32,7 @@ function pato(){
     window.location.href="html/pato.html";
 }
 function gato(){
-    window.location.href="html/gato.html";
+    window.location.href="html/Gato.html";
 }
 function bengala(){
     window.location.href="html/tigre.html";
