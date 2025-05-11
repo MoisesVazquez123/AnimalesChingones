@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ornitorrinco</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: #494444;
+      max-width: 2000px;
+      margin: auto;
+    }
+    .tittle {
+      padding: 50px;
+      text-align: center;
+      font-size: 60px;
+      color: #494444;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carousel {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      perspective: 1200px;
+    }
+    .carousel-track {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+    .carousel-item {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-style: preserve-3d;
+      transform: translate(-50%, -50%);
+      transition: transform 1s ease, opacity 1s ease, z-index 1s;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .ContSlider {
+      margin-top: 60px;
+      width: 100%;
+      height: auto;
+    }
+    .line {
+      margin: auto;
+      width: 80%;
+      height: 3px;
+      background-color: #3c3c3c;
+      border-radius: 20px;
+    }
+    .slider {
+      height: 500px;
+    }
+    .ContArt {
+      margin-top: 60px;
+      height: 100%;
+      padding: 50px;
+      border-radius: 20px;
+      background-color: #a5907d;
+      width: 100%;
+    }
+    .subtittle {
+      margin-top: 30px;
+      font-size: 40px;
+      color: #fff;
+    }
+    .info {
+      text-align: justify;
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+    }
+    .imginline {
+      width: 70%;
+      max-width: 800px;
+      margin: 30px auto;
+      display: block;
+      border-radius: 30px;
+    }
+    .contdepre{
+      justify-self: center;
+      display: flex;
+      width: 80%;
+    }
+    .imgdepre{
+      border-radius: 8px;
+      width: 25%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="tittle">Ornitorrinco</h1>
+
+  <div class="line"></div>
+  <div class="ContSlider">
+    <div class="slider">
+      <div class="main-container">
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- 7 imágenes del ornitorrinco -->
+            <div class="carousel-item"><img src="https://www.mundoecologia.com.br/wp-content/uploads/2019/12/Ornitorrinco-5-10.jpg" alt="Ornitorrinco 1"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/R.41a9668f837a6e1a5ab26be26026fd3f?rik=XCVM8CLXuNSqCw&riu=http%3a%2f%2f1.bp.blogspot.com%2f_xOvgTXgk02U%2fSQXqQ8DK8rI%2fAAAAAAAAAao%2ftadd4rv60w8%2fw1200-h630-p-k-no-nu%2fGF.bmp&ehk=FV71pd37xq2NaBh8GD4nrds52zmvOBmKXykwMptx6mQ%3d&risl=&pid=ImgRaw&r=0" alt="Ornitorrinco 2"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.DPFvyi0aGb6-jgAPASKcwgHaEb?cb=iwp2&rs=1&pid=ImgDetMain" alt="Ornitorrinco 3"></div>
+            <div class="carousel-item"><img src="https://naturlink.pt/wp-content/uploads/2023/10/Grandes-barragens-sao-barreiras-significativas-a-sobrevivencia-dos-ornitorrincos-2048x1326.jpg" alt="Ornitorrinco 4"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/R.4895a483f68d0ba3897bfde54f8e1bd1?rik=LEenFJnHFoL8XQ&riu=http%3a%2f%2fwww.habanaradio.cu%2fwp-content%2fblogs.dir%2f2%2ffiles%2fsites%2f2%2f2016%2f03%2fTema-54.-Ornitorrinco.jpg&ehk=dZHcMoSSz73YenDNZSUC0slkyGcQTj5KLnz8c61LAos%3d&risl=&pid=ImgRaw&r=0" alt="Ornitorrinco 5"></div>
+            <div class="carousel-item"><img src="https://img-s1.onedio.com/id-65e868bb17c28a65fa912ed6/rev-0/w-600/h-337/f-jpg/s-46eaa0a767da538592a4ee1ecf7ee3330e65d81b.jpg" alt="Ornitorrinco 6"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/R.5a604410d96366ca61fed4f57534d7a1?rik=vXVHXALg8o8fkA&pid=ImgRaw&r=0" alt="Ornitorrinco 7"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="ContArt">
+    <article>
+      <h2 class="subtittle">Vida del Ornitorrinco</h2>
+      <p class="info">
+        El ornitorrinco (<em>Ornithorhynchus anatinus</em>) es un mamífero semiacuático nativo del este de Australia y Tasmania, reconocido como uno de los animales más extraños del mundo. Su cuerpo combina rasgos de diversas especies: tiene pico y patas de pato, cola de castor y cuerpo de nutria. Es uno de los pocos mamíferos que pone huevos. Vive en hábitats de agua dulce como ríos, arroyos y lagunas, donde excava complejas madrigueras en las orillas para protegerse y descansar. Su rutina diaria es mayormente nocturna, y pasa muchas horas nadando y buscando alimento.
+      </p>
+      <img class="imginline" src="../imagenes/ornitorrinco/orni1.webp" alt="Ornitorrinco vida">
+  
+      <h2 class="subtittle">Dieta</h2>
+      <p class="info">
+        La alimentación del ornitorrinco es principalmente carnívora y está compuesta por invertebrados acuáticos como larvas de insectos, gusanos, camarones de agua dulce y pequeños moluscos. Este animal utiliza su pico, dotado de sensores electroreceptores, para localizar a sus presas bajo el agua, ya que cierra los ojos, oídos y fosas nasales al sumergirse. Tiene una técnica de alimentación única: recolecta el alimento con el pico y lo guarda en unas bolsas ubicadas en las mejillas, donde lo tritura con placas córneas, ya que no tiene dientes verdaderos.
+      </p>
+      <img class="imginline" src="../imagenes/ornitorrinco/orni2.jpg" alt="Ornitorrinco comiendo">
+  
+      <h2 class="subtittle">Depredadores</h2>
+      <p class="info">
+        A pesar de su aspecto singular, el ornitorrinco tiene varios enemigos naturales. Entre ellos se encuentran aves rapaces como el águila audaz, serpientes grandes y cocodrilos de agua dulce. También es vulnerable a zorros, perros salvajes y gatos ferales introducidos por el ser humano. Sin embargo, su principal amenaza hoy en día es la actividad humana: la pérdida y fragmentación del hábitat, la contaminación de los cursos de agua y el cambio climático han afectado gravemente sus poblaciones. En algunas zonas, se han implementado esfuerzos de conservación para protegerlo.
+      </p>
+      <div class="contdepre">
+        <img class="imginline imgdepre" src="../imagenes/ornitorrinco/orni3.jpg" alt="Ornitorrinco coco">
+        <img class="imginline imgdepre" src="../imagenes/ornitorrinco/orni4.jpg" alt="Ornitorrinco aguila">
+        <img class="imginline imgdepre" src="../imagenes/ornitorrinco/orni5.jpg" alt="Ornitorrinco gato">
+        <img class="imginline imgdepre" src="../imagenes/ornitorrinco/orni6.jpg" alt="Ornitorrinco humano">
+      </div>
+      <h2 class="subtittle">Habilidades</h2>
+      <p class="info">
+        El ornitorrinco es un nadador muy ágil que se impulsa usando sus patas delanteras palmeadas, mientras que las traseras y su cola actúan como timón. Una de sus habilidades más impresionantes es la electrorecepción: su pico puede detectar los impulsos eléctricos generados por los movimientos musculares de sus presas. Esta capacidad, común en peces pero rarísima en mamíferos, le permite cazar con precisión en condiciones de visibilidad nula. Además, el macho tiene un espolón venenoso en las patas traseras que puede causar un dolor intenso en humanos, lo que lo convierte en uno de los pocos mamíferos venenosos.
+      </p>
+      <img class="imginline" src="../imagenes/ornitorrinco/orni7.jpg" alt="Ornitorrinco nadando">
+  
+      <h2 class="subtittle">Esperanza de vida</h2>
+      <p class="info">
+        En libertad, la esperanza de vida de un ornitorrinco suele oscilar entre los 10 y 12 años, aunque algunos ejemplares pueden vivir más tiempo si las condiciones ambientales son óptimas. En cautiverio, bajo cuidados adecuados, se han registrado casos de ornitorrincos que vivieron hasta 17 años. Su longevidad está directamente relacionada con la calidad de su hábitat: la contaminación del agua, la escasez de alimento y las alteraciones en el ecosistema pueden afectar drásticamente su salud y supervivencia.
+      </p>
+      <img class="imginline" src="../imagenes/ornitorrinco/orni8.jpg" alt="Esperanza de vida ornitorrinco">
+  
+      <h2 class="subtittle">El amor del Ornitorrinco</h2>
+      <p class="info">
+        El comportamiento reproductivo del ornitorrinco es solitario y estacional. Durante la temporada de apareamiento, que ocurre entre junio y octubre, el macho busca activamente a la hembra. Tras el apareamiento, la hembra cava una madriguera especial con cámaras interiores donde pone de uno a tres huevos. A diferencia de la mayoría de los mamíferos, el ornitorrinco no tiene pezones; la leche se secreta a través de poros en la piel del abdomen y las crías la lamen directamente. Las crías nacen ciegas, sin pelo y completamente dependientes del cuidado materno durante los primeros meses de vida.
+      </p>
+      <img class="imginline" src="../imagenes/ornitorrinco/orni9.jpg" alt="Ornitorrinco cría">
+    </article>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    const total = items.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      items.forEach((item, i) => {
+        const relativeIndex = (i - currentIndex + total) % total;
+        switch (relativeIndex) {
+          case 0:
+            item.style.transform = 'translate(-50%, -50%) translateX(-220px) scale(0.9) rotateY(30deg)';
+            item.style.zIndex = 1;
+            item.style.opacity = 0.6;
+            break;
+          case 1:
+            item.style.transform = 'translate(-50%, -50%) translateX(0px) scale(1.2) rotateY(0deg)';
+            item.style.zIndex = 3;
+            item.style.opacity = 1;
+            break;
+          case 2:
+            item.style.transform = 'translate(-50%, -50%) translateX(220px) scale(0.9) rotateY(-30deg)';
+            item.style.zIndex = 2;
+            item.style.opacity = 0.6;
+            break;
+          default:
+            item.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
+        }
+      });
+      currentIndex = (currentIndex + 1) % total;
+    }
+
+    updateCarousel();
+    setInterval(updateCarousel, 3000);
+  </script>
+</body>
+</html>
