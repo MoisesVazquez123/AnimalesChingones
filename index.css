@@ -267,7 +267,7 @@ body{
       display: none;
     }
     .image{
-        width:100 px;
+        width:100px;
         height: 100px;
     }
   }
@@ -283,8 +283,9 @@ body{
       display: none;
     }
     .image{
-        width:80px ;
-        height: 80px;
+        width:100px ;
+        height: 100px;
     }
   }
+
 
