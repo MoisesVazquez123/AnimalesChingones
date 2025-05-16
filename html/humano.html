@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ser Humano</title>
+  <style>
+    *{margin:0;padding:0;}
+    body{
+      justify-self:center;
+      max-width:2000px;
+      width:100%;
+      height:100%;
+      background-color:#4b79a1;
+      font-size:40px;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+    }
+    .tittle{
+      padding:50px;
+      text-align:center;
+      color:#f2f2f2;
+      border-radius:0 0 40px 40px;
+      font-size:65px;
+      letter-spacing:2px;
+      margin-bottom:30px;
+    }
+    .main-container{display:flex;flex-direction:column;align-items:center;}
+    .carousel{
+      position:relative;
+      width:800px;
+      height:400px;
+      perspective:1200px;
+      margin-bottom:30px;
+    }
+    .carousel-track{
+      width:100%;
+      height:100%;
+      position:relative;
+      transform-style:preserve-3d;
+    }
+    .carousel-item{
+      width:300px;
+      height:300px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform-style:preserve-3d;
+      transform:translate(-50%,-50%);
+      transition:transform 1s ease,opacity 1s ease,z-index 1s;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.3);
+      background:#b7cbb0;
+    }
+    .carousel-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .ContSlider{width:100%;height:auto;}
+    .line{
+      margin-left:10%;
+      width:80%;
+      height:3px;
+      background-color:#718faa;
+      border-radius:20px;
+    }
+    .slider{
+      margin-top:20px;
+      margin-bottom:20px;
+      height:500px;
+    }
+    .ContArt{
+      box-sizing:border-box;
+      width:100%;
+      height:100%;
+      padding:50px;
+      margin-top:50px;
+      border-radius:20px;
+      background-color:#f5f6fa;
+    }
+    .subtittle{
+      margin-top:30px;
+      font-size:40px;
+      color:#718faa;
+    }
+    .info{
+      text-align:justify;
+      font-weight:500;
+      font-size:20px;
+      width:100%;
+      color:#333;
+      margin-bottom:20px;
+    }
+    .imginline{
+      max-width:900px;
+      margin:30px auto 0 auto;
+      display:block;
+      width:70%;
+      height:auto;
+      border-radius:30px;
+      box-shadow:0 4px 20px rgba(77,121,161,0.15);
+    }
+    .section-flex{
+      margin-top:30px;
+      display:flex;
+      width:100%;
+      height:auto;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .section-img{
+      align-self:center;
+      width:350px;
+      min-width:220px;
+      height:auto;
+      border-radius:30px;
+      box-shadow:0 4px 20px rgba(77,121,161,0.15);
+      margin-bottom:20px;
+    }
+    .section-info{
+      width:55%;
+      min-width:250px;
+      align-self:center;
+    }
+    @media (max-width:1000px){
+      .carousel{width:98vw;height:40vw;max-width:98vw;max-height:40vw;}
+      .carousel-item{width:35vw;height:35vw;min-width:180px;min-height:180px;}
+      .section-flex{flex-direction:column;}
+      .section-img,.section-info{width:100%;}
+      .imginline{width:95%;}
+    }
+  </style>
+</head>
+<body>
+  <h1 class="tittle">Ser Humano</h1>
+  <div class="ContSlider">
+    <div class="line"></div>
+    <div class="slider">
+      <div class="main-container">
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item"><img src="https://diarioelsalvador.com/wp-content/uploads/2021/07/dragon-2.jpg"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.es2P1mkzuc0o41GLDgj-UQHaDh?cb=iwp2&rs=1&pid=ImgDetMain" alt="Manos humanas"></div>
+            <div class="carousel-item"><img src="https://es.ancient-code.com/wp-content/uploads/2018/08/Baghdad-Round-City.jpg" alt="Niños jugando"></div>
+            <div class="carousel-item"><img src="https://cristianismo.alfablogs.com/wp-content/uploads/Cristianismo-y-cultura-cl%C3%A1sica-en-la-Antigua-Roma.png" alt="Humanos en la naturaleza"></div>
+            <div class="carousel-item"><img src="https://pm1.narvii.com/6850/d3fe173e9492cfa514a21afc721c9d497fee3458v2_hq.jpg" alt="Rostros humanos"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/R.5456a142f457f9a1e0677ecd898ec65f?rik=71KANEVNZKtvoQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Fka0V637pRw%2fU6j0hzUSspI%2fAAAAAAAAAWI%2fXL-QrJfmMsE%2fs1600%2fcapturadejerusalenbig.jpg&ehk=jYf%2b1Hn%2bfkn5DL5IRVyKgfnnKlBZ0of7887pHE4mkkw%3d&risl=&pid=ImgRaw&r=0" alt="Humanos en grupo"></div>
+                <div class="carousel-item"><img src="https://th.bing.com/th/id/R.a1ee3cbc0a0f2e68c3bca5d1c9c28169?rik=4LX2ewppUc1VjA&pid=ImgRaw&r=0" alt="Humanos en grupo"></div>
+                       <div class="carousel-item"><img src="https://i.etsystatic.com/11274917/r/il/ff5704/2359008853/il_fullxfull.2359008853_9c6c.jpg" alt="Humanos en grupo"></div>
+                        <div class="carousel-item"><img src="https://th.bing.com/th/id/R.b762c390fa26b66f151f128c4ebcadc7?rik=hI%2b4ihI9U3s67A&riu=http%3a%2f%2fmedicinapreventiva.info%2fwp-content%2fuploads%2f2015%2f03%2fgente-en-la-calle.jpg&ehk=gOuUUkvBexXWks4Pi3NPfCMZGKI0lV8Cd8HbIgN19T8%3d&risl=&pid=ImgRaw&r=0" alt="Humanos en grupo"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </div>
+  <div class="ContArt">
+    <article>
+      <h2 class="subtittle">¿Quiénes somos?</h2>
+      <h3 class="info">
+        El ser humano, Homo sapiens, es una especie de mamífero caracterizada por su inteligencia, creatividad y capacidad de adaptación. A lo largo de la historia, los humanos han desarrollado culturas, lenguajes y tecnologías que les han permitido transformar el mundo y explorar todos los rincones del planeta.
+      </h3>
+      <img class="imginline" src="../imagenes/humano/humano1.jpg" alt="Diversidad humana">
+      <h2 class="subtittle">Estilo de vida y relaciones sociales</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/humano/humano2.jpg" alt="Familia humana">
+        <div class="section-info">
+          <h3 class="info">
+            Los humanos son seres sociales por naturaleza. Forman familias, comunidades y sociedades complejas. La cooperación, la comunicación y la empatía son fundamentales para la vida en grupo. Las relaciones sociales han permitido el desarrollo de civilizaciones, el arte, la ciencia y la cultura.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Dieta y alimentación</h2>
+      <div class="section-flex">
+        <div class="section-info">
+          <h3 class="info">
+            La dieta humana es muy variada y depende de la cultura y el entorno. Los humanos pueden ser omnívoros, vegetarianos o veganos. La agricultura y la ganadería han permitido asegurar el alimento para grandes poblaciones, aunque la alimentación saludable sigue siendo un reto en muchas partes del mundo.
+          </h3>
+        </div>
+        <img class="section-img" src="../imagenes/humano/humano3.jpg" alt="Niños comiendo">
+      </div>
+      <h2 class="subtittle">Habilidades y características</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/humano/humano4.jpg" alt="Manos humanas">
+        <div class="section-info">
+          <h3 class="info">
+            El ser humano destaca por su inteligencia, creatividad y capacidad de aprendizaje. El lenguaje, la escritura y el pensamiento abstracto han sido claves en su evolución. Además, la destreza manual y la postura erguida han permitido el desarrollo de herramientas y tecnologías avanzadas.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Esperanza de vida y amenazas</h2>
+      <div class="section-flex">
+        <div class="section-info">
+          <h3 class="info">
+            La esperanza de vida humana ha aumentado gracias a los avances médicos y tecnológicos. Sin embargo, la humanidad enfrenta amenazas como enfermedades, conflictos, contaminación y cambio climático. La cooperación global y la educación son esenciales para superar estos desafíos.
+          </h3>
+        </div>
+        <img class="section-img" src="../imagenes/humano/humano5.jpg" alt="Humanos en la naturaleza">
+      </div>
+      <h2 class="subtittle">Reproducción y vínculos familiares</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/humano/humano6.jpg" alt="Rostros humanos">
+        <div class="section-info">
+          <h3 class="info">
+            La reproducción humana es sexual y da lugar a una descendencia que es cuidada y educada durante años. Los lazos familiares y afectivos son fundamentales para el desarrollo de los niños y la transmisión de valores y conocimientos entre generaciones.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Origen y evolución del ser humano</h2>
+      <div class="section-flex">
+        <div class="section-info">
+          <h3 class="info">
+            El ser humano moderno evolucionó en África hace unos 200,000 años y desde entonces ha colonizado todos los continentes. Su evolución ha estado marcada por la adaptación al entorno, la invención de herramientas y el desarrollo del pensamiento simbólico y cultural.
+          </h3>
+        </div>
+        <img class="section-img" src="../imagenes/humano/humano7.jpg" alt="Humanos en grupo">
+      </div>
+      <h2 class="subtittle">Datos curiosos sobre los humanos</h2>
+      <h3 class="info">
+        El cerebro humano es uno de los más complejos del reino animal. Los humanos pueden expresar miles de emociones, crear arte y ciencia, y modificar su entorno como ninguna otra especie. La diversidad cultural y genética es una de sus mayores riquezas.
+      </h3>
+    </article>
+  </div>
+  <script>
+    // Carrusel 3D automático
+    const items = document.querySelectorAll('.carousel-item');
+    const total = items.length;
+    let currentIndex = 0;
+    function updateCarousel() {
+      items.forEach((item, i) => {
+        const relativeIndex = (i - currentIndex + total) % total;
+        switch (relativeIndex) {
+          case 0:
+            item.style.transform = 'translate(-50%, -50%) translateX(-220px) scale(0.9) rotateY(30deg)';
+            item.style.zIndex = 1;
+            item.style.opacity = 0.6;
+            break;
+          case 1:
+            item.style.transform = 'translate(-50%, -50%) translateX(0px) scale(1.2) rotateY(0deg)';
+            item.style.zIndex = 3;
+            item.style.opacity = 1;
+            break;
+          case 2:
+            item.style.transform = 'translate(-50%, -50%) translateX(220px) scale(0.9) rotateY(-30deg)';
+            item.style.zIndex = 2;
+            item.style.opacity = 0.6;
+            break;
+          default:
+            item.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
+        }
+      });
+      currentIndex = (currentIndex + 1) % total;
+    }
+    updateCarousel();
+    setInterval(updateCarousel, 3000);
+  </script>
+</body>
+</html>
