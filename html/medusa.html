@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turritopsis dohrnii: La medusa inmortal</title>
+  <link rel="stylesheet" href="../css/menu.css">
+  <style>
+    *{margin:0;padding:0;}
+    body{
+      justify-self:center;
+      max-width:2000px;
+      width:100%;
+      height:100%;
+      background-color:#060b1a;
+      font-size:40px;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+      margin: auto;
+    }
+    .tittle{
+      padding:50px;
+      text-align:center;
+      color:#f2f2f2;
+      border-radius:0 0 40px 40px;
+      font-size:65px;
+      letter-spacing:2px;
+      margin-bottom:30px;
+     
+    }
+    .main-container{display:flex;flex-direction:column;align-items:center;}
+    .carousel{
+      position:relative;
+      width:800px;
+      height:400px;
+      perspective:1200px;
+      margin-bottom:30px;
+    }
+    .carousel-track{
+      width:100%;
+      height:100%;
+      position:relative;
+      transform-style:preserve-3d;
+    }
+    .carousel-item{
+              box-shadow: 0 0 10px 0 #f2f2f2;
+      width:300px;
+      height:300px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform-style:preserve-3d;
+      transform:translate(-50%,-50%);
+      transition:transform 1s ease,opacity 1s ease,z-index 1s;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.3);
+      background:#b2ebf2;
+    }
+    .carousel-item img{
+      box-shadow: 0 10px 0 0 #f2f2f2;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+    .ContSlider{width:100%;height:auto;}
+    .line{
+      margin-left:10%;
+      margin-top: 10px;
+      margin-bottom: 100px;
+      width:80%;
+      height:3px;
+      background-color:#1e2f64;
+      border-radius:20px;
+    }
+    .slider{
+      margin-top:20px;
+      margin-bottom:20px;
+      height:500px;
+    }
+    .ContArt{
+      box-sizing:border-box;
+      width:100%;
+      height:100%;
+      padding:50px;
+      margin-top:50px;
+      border-radius:20px;
+      background-color:#272e41;
+    }
+    .subtittle{
+      margin-top:30px;
+      font-size:40px;
+      color:#7c7c7c;
+    }
+    .info{
+      text-align:justify;
+      font-weight:500;
+      font-size:20px;
+      width:100%;
+      color:#acacac;
+      margin-bottom:20px;
+    }
+    .imginline{
+      max-width:900px;
+      margin:30px auto 0 auto;
+      display:block;
+      width:70%;
+      height:auto;
+      border-radius:30px;
+      box-shadow:0 4px 20px rgba(0,188,212,0.15);
+    }
+    .section-flex{
+      margin-top:30px;
+      display:flex;
+      width:100%;
+      height:auto;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .section-img{
+      align-self:center;
+      width:350px;
+      min-width:220px;
+      height:auto;
+      border-radius:30px;
+      box-shadow:0 4px 20px rgba(0,188,212,0.15);
+      margin-bottom:20px;
+    }
+    .section-info{
+      width:55%;
+      min-width:250px;
+      align-self:center;
+    }
+    @media (max-width:1000px){
+      .carousel{width:98vw;height:40vw;max-width:98vw;max-height:40vw;}
+      .carousel-item{width:35vw;height:35vw;min-width:180px;min-height:180px;}
+      .section-flex{flex-direction:column;}
+      .section-img,.section-info{width:100%;}
+      .imginline{width:95%;}
+    }
+  </style>
+</head>
+<body>
+    <button id="scroll-up" class="scroll-btn">⬆️ Subir</button>
+  <button id="scroll-down" class="scroll-btn">⬇️ Bajar</button>
+        <menu>
+            <div class="index">
+ <img class="index" src="../imagenes/menu/index.png" alt="" onclick="index()"><p>volver a la pagina de inicio</p>
+            </div>
+            <div class="linemenu"></div>
+                <img class="pato" src="../imagenes/menu/pato.png" alt="" onclick="pato()">
+                <img class="gato" src="../imagenes/menu/gato.png" alt="" onclick="gato()">
+                <img class="capibara" src="../imagenes/menu/capibara.png" alt="" onclick="capibara()">
+                <img class="conejo" src="../imagenes/menu/conejo.png" alt="" onclick="conejo()">
+                <img class="huron" src="../imagenes/menu/huron.png" alt="" onclick="huron()">
+                <img class="tigre" src="../imagenes/menu/tigre.png" alt="" onclick="bengala()">
+                <img class="tortuga" src="../imagenes/menu/tortuga.png" alt="" onclick="tortuga()">
+                <img class="ballena" src="../imagenes/menu/ballena.png" alt="" onclick="ballena()">
+                <img class="delfin" src="../imagenes/menu/delfin.png" alt="" onclick="delfin()">
+                <img class="pulpo" src="../imagenes/menu/pulpo.png" alt="" onclick="pulpo()">
+                <img class="medusa" src="../imagenes/menu/medusa.png" alt="" onclick="medusa()">
+                <img class="tiburon" src="../imagenes/menu/tiburon.png" alt="" onclick="tiburones()">
+                <img class="ajolote" src="../imagenes/menu/ajolote.png" alt="" onclick="ajolote()">
+                <img class="alcon" src="../imagenes/menu/alcon.png" alt="" onclick="halcon()">
+                <img class="komodo" src="../imagenes/menu/komodo.png" alt="" onclick="komodo()">
+                <img class="perezoso" src="../imagenes/menu/perezoso.png" alt="" onclick="perezoso()">
+                <img class="ornitorrinco" src="../imagenes/menu/ornitorrinco.png" alt="" onclick="ornitorrinco()">
+                <img class="abeja" src="../imagenes/menu/abeja.png" alt="" onclick="abeja()">
+                <img class="humano" src="../imagenes/menu/humano.png" alt="" onclick="humano()">     
+        </menu>
+  <h1 class="tittle">Turritopsis dohrnii: La medusa inmortal</h1>
+      <div class="line"></div>
+  <div class="ContSlider">
+    <div class="slider">
+      <div class="main-container">
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item"><img src="https://img2.rtve.es/imagenes/descifran-claves-geneticas-permiten-rejuvenecer-medusa-inmortal/1661802478493.jpg" alt="Turritopsis dohrnii"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.mi1Z9Ri9fjrwfdsi1BtPtgAAAA?cb=iwp2&rs=1&pid=ImgDetMain" alt="Medusa inmortal"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.8Lw6HgNN9TSB13EPMcrpWAHaEb?o=7&cb=iwp2rm=3&rs=1&pid=ImgDetMain" alt="Turritopsis dohrnii en el mar"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.ZVSi0BPe8qNJuq3vxgCBoQHaET?cb=iwp2&rs=1&pid=ImgDetMain" alt="Detalle de Turritopsis"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="line"></div>
+  <div class="ContArt">
+    <article>
+      <h2 class="subtittle">¿Qué es la Turritopsis dohrnii?</h2>
+      <h3 class="info">
+        La Turritopsis dohrnii es una pequeña medusa originaria del mar Mediterráneo, conocida como la "medusa inmortal". Es famosa porque puede revertir su ciclo de vida, volviendo de adulta a un estado juvenil, lo que la hace potencialmente biológicamente inmortal.
+      </h3>
+      <img class="imginline" src="../imagenes/medusa/medusa1.jpg" alt="Turritopsis dohrnii de cerca">
+      <h2 class="subtittle">Estilo de vida y hábitat</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/medusa/medusa2.jpg" alt="Medusa inmortal en el mar">
+        <div class="section-info">
+          <h3 class="info">
+            Vive en aguas templadas y tropicales, principalmente en el Mediterráneo y en algunos océanos del mundo. Es de tamaño muy pequeño, apenas unos milímetros, y suele pasar desapercibida entre el plancton marino.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Dieta y alimentación</h2>
+      <div class="section-flex">
+        <div class="section-info">
+          <h3 class="info">
+            Se alimenta de pequeños organismos del plancton, como huevos de peces, larvas y otros microorganismos marinos. Utiliza sus tentáculos para capturar el alimento y llevarlo a su boca central.
+          </h3>
+        </div>
+        <img class="section-img" src="../imagenes/medusa/medusa3.jpg" alt="Turritopsis alimentándose">
+      </div>
+      <h2 class="subtittle">Habilidades y características únicas</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/medusa/medusa4.jpg" alt="Detalle de Turritopsis">
+        <div class="section-info">
+          <h3 class="info">
+            Su característica más sorprendente es la transdiferenciación: cuando enfrenta estrés o daño, puede transformar sus células adultas en células jóvenes y comenzar su ciclo de vida de nuevo. Este proceso la hace única en el reino animal y objeto de estudio científico.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Esperanza de vida y amenazas</h2>
+      <div class="section-flex">
+        <div class="section-info">
+          <h3 class="info">
+            Aunque es biológicamente inmortal, en la naturaleza puede morir por depredadores, enfermedades o cambios ambientales. Su longevidad potencial ha despertado el interés de la ciencia para entender el envejecimiento.
+          </h3>
+        </div>
+        <img class="section-img" src="../imagenes/medusa/medusa5.jpg" alt="Turritopsis en el agua">
+      </div>
+      <h2 class="subtittle">Reproducción y ciclo de vida</h2>
+      <div class="section-flex">
+        <img class="section-img" src="../imagenes/medusa/medusa6.jpg" alt="Ciclo de vida de Turritopsis">
+        <div class="section-info">
+          <h3 class="info">
+            Se reproduce sexualmente liberando óvulos y espermatozoides al agua. Tras la fecundación, surge una larva que se fija al fondo marino y se convierte en pólipo. De este pólipo surgen nuevas medusas, que pueden volver a ser pólipos si es necesario.
+          </h3>
+        </div>
+      </div>
+      <h2 class="subtittle">Datos curiosos sobre Turritopsis dohrnii</h2>
+      <h3 class="info">
+        Es conocida como la "medusa inmortal" porque puede revertir su envejecimiento. Su estudio podría ayudar a entender el envejecimiento en otros seres vivos. A pesar de su fama, es inofensiva para los humanos y apenas visible a simple vista.
+      </h3>
+    </article>
+  </div>
+  <script>
+    // Carrusel 3D automático
+    const items = document.querySelectorAll('.carousel-item');
+    const total = items.length;
+    let currentIndex = 0;
+    function updateCarousel() {
+      items.forEach((item, i) => {
+        const relativeIndex = (i - currentIndex + total) % total;
+        switch (relativeIndex) {
+          case 0:
+            item.style.transform = 'translate(-50%, -50%) translateX(-220px) scale(0.9) rotateY(30deg)';
+            item.style.zIndex = 1;
+            item.style.opacity = 0.6;
+            break;
+          case 1:
+            item.style.transform = 'translate(-50%, -50%) translateX(0px) scale(1.2) rotateY(0deg)';
+            item.style.zIndex = 3;
+            item.style.opacity = 1;
+            break;
+          case 2:
+            item.style.transform = 'translate(-50%, -50%) translateX(220px) scale(0.9) rotateY(-30deg)';
+            item.style.zIndex = 2;
+            item.style.opacity = 0.6;
+            break;
+          default:
+            item.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
+        }
+      });
+      currentIndex = (currentIndex + 1) % total;
+    }
+    updateCarousel();
+    setInterval(updateCarousel, 3000);
+  </script>
+  <script src ="../index.js"></script>
+    
+  </script>
+</body>
+</html>

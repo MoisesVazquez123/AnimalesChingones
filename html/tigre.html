@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigre de Bengala Blanco</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+            justify-self: center;
+            max-width: 2000px;
+            width: 100%;
+            height: 100%;
+            background-color: #2d292e;
+            font-size: 40px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* Estilo para el título */
+        .tittle {
+            padding: 50px;
+            text-align: center;
+            font-size: 60px;
+            color: #f2f2f2;
+        }
+
+        /* Carrusel de imágenes */
+        .carousel {
+            max-width: 800px;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* Estilo de los botones de navegación */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 40px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+
+        .line {
+            margin-left: 10%;
+            width: 80%;
+            height: 3px;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        /* Secciones informativas */
+        .ContArt {
+
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            padding: 50px;
+            margin-top: 50px;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+        }
+
+        .subtittle {
+            font-size: 40px;
+            color: #2d292e;
+            margin-top: 30px;
+        }
+
+        .info {
+            color: #000;
+            text-align: justify;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .section-img {
+            position: relative;
+            left: 50%;
+            translate: -50%;
+            width: auto;
+            max-width: 500px;
+            height: 400px;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+
+        .primary-color {
+            color: #494444;
+        }
+
+        .secondary-color {
+            color: #716D6D;
+        }
+    </style>
+</head>
+<body>
+      <button id="scroll-up" class="scroll-btn">⬆️ Subir</button>
+  <button id="scroll-down" class="scroll-btn">⬇️ Bajar</button>
+        <menu>
+            <div class="index">
+ <img class="index" src="../imagenes/menu/index.png" alt="" onclick="index()"><p>volver a la pagina de inicio</p>
+            </div>
+            <div class="linemenu"></div>
+                <img class="pato" src="../imagenes/menu/pato.png" alt="" onclick="pato()">
+                <img class="gato" src="../imagenes/menu/gato.png" alt="" onclick="gato()">
+                <img class="capibara" src="../imagenes/menu/capibara.png" alt="" onclick="capibara()">
+                <img class="conejo" src="../imagenes/menu/conejo.png" alt="" onclick="conejo()">
+                <img class="huron" src="../imagenes/menu/huron.png" alt="" onclick="huron()">
+                <img class="tigre" src="../imagenes/menu/tigre.png" alt="" onclick="bengala()">
+                <img class="tortuga" src="../imagenes/menu/tortuga.png" alt="" onclick="tortuga()">
+                <img class="ballena" src="../imagenes/menu/ballena.png" alt="" onclick="ballena()">
+                <img class="delfin" src="../imagenes/menu/delfin.png" alt="" onclick="delfin()">
+                <img class="pulpo" src="../imagenes/menu/pulpo.png" alt="" onclick="pulpo()">
+                <img class="medusa" src="../imagenes/menu/medusa.png" alt="" onclick="medusa()">
+                <img class="tiburon" src="../imagenes/menu/tiburon.png" alt="" onclick="tiburones()">
+                <img class="ajolote" src="../imagenes/menu/ajolote.png" alt="" onclick="ajolote()">
+                <img class="alcon" src="../imagenes/menu/alcon.png" alt="" onclick="halcon()">
+                <img class="komodo" src="../imagenes/menu/komodo.png" alt="" onclick="komodo()">
+                <img class="perezoso" src="../imagenes/menu/perezoso.png" alt="" onclick="perezoso()">
+                <img class="ornitorrinco" src="../imagenes/menu/ornitorrinco.png" alt="" onclick="ornitorrinco()">
+                <img class="abeja" src="../imagenes/menu/abeja.png" alt="" onclick="abeja()">
+                <img class="humano" src="../imagenes/menu/humano.png" alt="" onclick="humano()">     
+        </menu>
+    <h1 class="tittle">Tigre de Bengala Blanco</h1>
+
+    <div class="line"></div>
+    <!-- Carrusel de imágenes -->
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <!-- Carrusel con 7 imágenes -->
+            <div class="carousel-item"><img src="https://cdn.pixabay.com/photo/2016/07/13/06/20/white-tiger-1513723_1280.jpg" alt="Tigre de Bengala Blanco 1"></div>
+            <div class="carousel-item"><img src="https://thumbs.dreamstime.com/b/tigre-blanco-que-presenta-delante-de-la-c%C3%A1mara-83229222.jpg" alt="Tigre de Bengala Blanco 2"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.2A1X1HM32w_z0aa6rO4H-QHaE7?cb=iwp2&rs=1&pid=ImgDetMain" alt="Tigre de Bengala Blanco 3"></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.bbs8ewlFbgM0hPa0qhRfrAHaFI?cb=iwp2&w=1600&h=1108&rs=1&pid=ImgDetMain" alt="Tigre de Bengala Blanco 4"></div>
+            <div class="carousel-item"><img src="https://w0.peakpx.com/wallpaper/759/666/HD-wallpaper-tigre-bengala-tiger-tigers-white-zoologico.jpg" alt="Tigre de Bengala Blanco 5"></div>
+            <div class="carousel-item"><img src="https://assets.afcdn.com/story/20200913/2086769_w980h638c1cx1112cy450cxt0cyt0cxb2124cyb1411.jpg" alt="Tigre de Bengala Blanco 6"></div>
+            <div class="carousel-item"><img src="https://www.medioambiente.net/wp-content/uploads/tigre-blanco.jpg" alt="Tigre de Bengala Blanco 7"></div>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <!-- Sección sobre el Tigre de Bengala Blanco -->
+    <div class="ContArt">
+        <h2 class="subtittle primary-color">Vida del Tigre de Bengala Blanco</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre3.webp" alt="Tigre de Bengala Blanco">
+        <p class="info">
+            El tigre de Bengala blanco es una subespecie del tigre de Bengala, con una mutación genética que le da un pelaje blanco. Originarios del subcontinente indio, estos tigres son conocidos por su belleza y rara aparición en la naturaleza. La mutación genética que causa su pelaje blanco también viene con ciertos problemas de salud, como la ceguera parcial y deformidades genéticas. Sin embargo, se han encontrado en zoológicos y santuarios debido a la crianza en cautiverio.
+        </p>
+
+        <h2 class="subtittle primary-color">Dieta</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre4.jpg" alt="Tigre cazando">
+        <p class="info">
+            El tigre de Bengala blanco es carnívoro y se alimenta principalmente de grandes mamíferos como ciervos, jabalíes y otros ungulados. Utilizan su sigilo y fuerza para cazar, acechando a su presa y atacando con rapidez y precisión. En cautiverio, su dieta es cuidadosamente administrada para garantizar que se mantengan saludables, con carne fresca y suplementos alimenticios adecuados.
+        </p>
+
+        <h2 class="subtittle primary-color">Depredadores</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre2.jpg" alt="Tigre luchando">
+        <p class="info">
+            En la naturaleza, el tigre de Bengala blanco no tiene muchos depredadores naturales debido a su posición en la cima de la cadena alimenticia. Sin embargo, pueden enfrentar amenazas de otros grandes carnívoros, como leones o hienas, en áreas donde sus territorios se solapan. Los humanos también representan una gran amenaza debido a la caza furtiva y la destrucción de su hábitat.
+        </p>
+
+        <h2 class="subtittle primary-color">Habilidades</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre5.jpg">
+        <p class="info">
+            El tigre de Bengala blanco es un cazador excepcional. Utiliza su agilidad, fuerza y sigilo para acercarse a sus presas sin ser detectado. A pesar de ser más grande que otras especies de felinos, tiene una gran capacidad para moverse silenciosamente por la jungla. Además, sus garras y colmillos son armas letales cuando caza.
+        </p>
+
+        <h2 class="subtittle primary-color">Esperanza de vida</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre4.webp" alt="Tigre envejeciendo">
+        <p class="info">
+            En la naturaleza, los tigres de Bengala blanco pueden vivir entre 10 y 15 años, aunque en cautiverio pueden llegar a vivir hasta 20 años debido a los cuidados y condiciones controladas. Su esperanza de vida depende de varios factores, como el entorno, la salud genética y la dieta.
+        </p>
+
+        <h2 class="subtittle primary-color">El amor del Tigre</h2>
+        <img class="section-img" src="../imagenes/tigrebengalapagina/tigre1.jpg" alt="Amor del tigre">
+        <p class="info">
+            El tigre de Bengala blanco, como otros tigres, es generalmente solitario. En la época de reproducción, los machos y las hembras se encuentran para aparearse. Después del proceso de cortejo, la hembra da a luz a una camada que usualmente consta de dos o tres cachorros. Los tigres jóvenes permanecen con su madre hasta que alcanzan la madurez.
+        </p>
+    </div>
+
+    <script>
+        // JavaScript para el funcionamiento del carrusel automático
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+
+        // Función para mover el carrusel
+        function moveToNext() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
+
+        // Actualizar la posición del carrusel
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const offset = -currentIndex * 100; // Mover un 100% por cada ítem
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Cambiar automáticamente cada 5 segundos
+        setInterval(moveToNext, 5000);
+    </script>
+    <script src="../index.js">
+        
+    </script>
+</body>
+</html>
