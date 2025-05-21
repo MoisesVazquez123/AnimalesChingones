@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halcon</title>
+</head>
+<body>
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+        margin: auto;
+      background-color: #0000009f;
+      font-size: 40px;
+      font-family: sans-serif;
+      max-width: 2000px;
+      width: 100%;
+    }
+    .tittle {
+      padding: 50px;
+      text-align: center;
+      color: #000000;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carousel {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      perspective: 1200px;
+    }
+    .carousel-track {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+    .carousel-item {
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-style: preserve-3d;
+      transform: translate(-50%, -50%);
+      transition: transform 1s ease, opacity 1s ease, z-index 1s;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .ContSlider {
+      width: 100%;
+      height: auto;
+    }
+    .line {
+      margin-left: 10%;
+      width: 80%;
+      height: 3px;
+      background-color: #000000;
+      border-radius: 20px;
+      border-style: solid;
+    }
+    .slider {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 500px;
+    }
+    .ContArt {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 50px;
+      margin-top: 50px;
+      border-radius: 20px;
+      background-color: #000000;
+    }
+    .subtittle {
+      margin-top: 30px;
+      font-size: 40px;
+      color: #fff;
+    }
+    .info {
+      text-align: justify;
+      font-weight: 500;
+      font-size: 20px;
+      color: white;
+    }
+    .imginline {
+      max-width: 1000px;
+      margin-top: 30px;
+      display: block;
+      width: 70%;
+      height: auto;
+      border-radius: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="tittle">Halcon</h1>
+  <div class="ContSlider">
+    <div class="line"></div>
+    <div class="slider">
+      <div class="main-container">
+        <div class="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item"><img src="https://www.allaboutbirds.org/guide/assets/photo/303618951-1280px.jpg" alt="Halcon 1" /></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.KFuzJxoGPVxcYUoTsjjBIwHaEK?cb=iwc2&rs=1&pid=ImgDetMain" alt="Halcon 2" /></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/R.e73f5273505dc8bf1b9ca0e411d43ce7?rik=bbRUYpBxaTiBOg&pid=ImgRaw&r=0" alt="Halcon 3" /></div>
+            <div class="carousel-item"><img src="https://png.pngtree.com/background/20230519/original/pngtree-falcon-rests-in-the-rain-looking-up-picture-image_2660533.jpg" alt="Halcon 4" /></div>
+            <div class="carousel-item"><img src="https://www.gtush.com/wp-content/uploads/2018/06/falco.jpg" alt="Halcon 5" /></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.Rlsv44fHf_56XkezF_7t_gHaE8?cb=iwc2&rs=1&pid=ImgDetMain" alt="Halcon 6" /></div>
+            <div class="carousel-item"><img src="https://th.bing.com/th/id/OIP.vQPDClOmYVTDT-oO9z_kggHaFv?cb=iwc2&rs=1&pid=ImgDetMain" alt="Halcon 7" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </div>
+
+  <div class="ContArt">
+    <article>
+      <h2 class="subtittle">Que es un halcon</h2>
+      <h3 class="info">
+       El halcón, es un ave rapaz perteneciente a la familia de los falconiformes. Bien capacitada para la caza, ya que posee una excelente velocidad de vuelo, una aguda y amplia visión, así como unas garras especialmente diseñadas para atrapar a sus presas.
+       Se destaca de otros animales aéreos al ser catalogado como el ave más rápida del mundo.
+      </h3>
+
+      <img class="imginline" src="../imagenes/halcon/halcon parado en rama.webp" alt="Pulpo parado" >
+
+      <h2 class="subtittle">Caracteristicas del halcon</h2>
+      <h3 class="info">
+      ► Tamaño <br><br>
+      Los halcones pueden alcanzar los 60 centímetros de altura, siendo las hembras más grandes que los machos. También pueden llegar a pesar hasta 600 g de peso. <br><br>
+      ► Su color cambia al crecer <br><br>
+      La mayoría de tienen un plumaje oscuro, con tonos grises en la parte superior de su cuerpo. También, tienen algunas zonas blancas con manchas negras en su pecho y en la parte inferior de su cuerpo.
+      Durante el primer año de vida suelen tener un plumaje de color pardo. <br><br>
+      ► Identifica presas a mas de 1km
+      Los halcones pueden divisar a sus presas hasta 1 Km y medio de distancia, lo que dice mucho de su excelente visión. Esto se debe a que sus ojos cuentan con 4 tipos de receptores de color en el ojo.
+      Estos receptores les brindan una gran capacidad para percibir tanto un amplio rango de visibilidad, como la parte ultravioleta del espectro. También pueden detectar luz polarizada y campos magnéticos. <br><br>
+      ► Es el ave más rápida que existen <br><br>
+      Son capaces de alcanzar una velocidad de vuelo superiores a los 300 Km/h, la cual le permite emboscar a sus presas y capturarlas tomándolas por sorpresa. <br><br>
+      ► Sus garras y picos están hechos para desgarrar carne <br><br>
+      Estas aves tienen un par de garras afiladas, especialmente diseñadas para atrapar a sus presas con tanta fuerza que pueden alzar vuelo sin soltarlas. 
+      Además, poseen un pico curvado, con el cual son capaces de destrozar a una presa casi de inmediato. <br><br>
+      ► Pueden vivir asta 20 años <br><br>
+      Los halcones son capaces de alcanzar hasta los 15 años de edad en libertad y hasta los 20 años de vida en cautiverio.
+      Existe alrededor de 40 especies de estas aves, siendo el más común el halcón peregrino, que mide alrededor de unos 40 cm. En cuanto a su peso, el macho tiende a pesar 800 gramos aproximadamente, mientras que la hembra hasta 1.400 gramos. La esperanza de vida varía de 15 a 20 años dependiendo de la especie, pero si están en cautiverio viven un poco más.
+      </h3>
+      <img class="imginline" src="../imagenes/halcon/halcon gris.jpeg" alt="Halcon" >
+
+      <h2 class="subtittle">Hábitad del halcón. ¿Dónde vive?</h2>
+      <h3 class="info">
+        El halcón no es un ave que se condicione a un área específica, ya que es capaz de adaptarse a cualquier espacio. Esto, siempre y cuando haya comida abundante y mucho espacio para volar y encubar. 
+        Este tipo de ave puede hallarse en todos los continentes del mundo, exceptuando zonas de clima extremo, tal como la antártida. Y en diversas partes incluyendo las ciudades, el trópico, el desierto e inclusive la tundra.
+        Los halcones son aves migratorias, que viajan siempre desde el Norte hacia el Sur en las temporadas de otoño y primavera.
+      </h3>
+      <img class="imginline" src="../imagenes/halcon/halcon en cueva.jpeg" alt="halcon en la cueva" >
+
+      <h2 class="subtittle">Alimentación: ¿Qué comen?</h2>
+      <h3 class="info">
+        El halcón es un ave carnívora que tiene la habilidad y la capacidad de volar muy alto por los aires, pero también a muy baja altura del suelo como en superficie acuática; es por ello que nunca les falta comida.
+        En su menú preferido esta la caza de pequeños roedores, serpientes, lagartos, e incluso peces. Eso sí, las aves más pequeñas que él, especialmente las palomas, no se escapa de su dieta diaria, incluso son cazadas en pleno vuelo.
+        El halcón es capaz de sorprender y matar a su presa de inmediato, y esto es debido a su gran velocidad, la cual puede alcanzar hasta los 320 km/h en picada; siendo de tal forma catalogado como el animal más rápido del planeta. Y es que cuando su presa se percata de su presencia y se siente amenazada, ya es demasiado tarde para que reaccione.
+        Cuando alguna especie de halcón se ve afectada por la falta de comida y decide migrar, la ruta de vuelo es siempre del norte al sur. A veces se desvía un poco por algún motivo, por ejemplo por fuertes vientos, tormentas, etc.; pero su destino será siempre el sur.
+      </h3>
+       <img class="imginline" src="../imagenes/halcon/halcon comiendo.jpeg" alt="halcon comiendo" >
+
+      <h2 class="subtittle">Tipo de Vuelo</h2>
+      <h3 class="info">
+        Los halcones poseen alas largas y delgadas, que le permiten alcanzar altas velocidades y a diferencia de otras alas como las elípticas, pueden mantener la velocidad constante por más tiempo. 
+        Gracias a la estructura del ala y el tipo de vuelo que realizan estas aves, son capaces de ahorrar energía mientras vuelan.
+      </h3>
+      <img class="imginline" src="../imagenes/halcon/halcon volando.jpeg" alt="halcon volando" >
+
+      <h2 class="subtittle">Reproducción y ciclo de vida</h2>
+      <h3 class="info">
+        Como se ha dicho anteriormente, el halcón es una ave solitaria, tanto así que el único momento en el cual se agrupan es para encontrar pareja y aparearse; eso ocurre al final del invierno o iniciando la primavera.
+        Alcanza la madurez sexual al cumplir su segundo año de vida aproximadamente. Además, es importante resaltar que estas aves tienen varias etapas de cortejo antes de aparearse. <br><br>
+        ► Cortejo <br><br>
+        Las hembras experimentan ocho fases de cortejo antes del apareamiento. El macho puede estar en este proceso de cortejo durante un mes, empleando sus mejores técnicas de vuelo. En este ciclo amoroso se incorporan horas de caza y alimentación juntos hasta lograr el apareamiento. <br><br>
+        ► Huevos, incubación y color <br><br>
+        La hembra puede poner entre 3 a 4 huevos y luego tanto el macho como la hembra los incuban juntos durante 7 semanas, dependiendo de su entorno. 
+        El color del huevo va cambiando, a medida que avanza el proceso de incubación, pasando del blanco al rojo o pardo moteado. <br><br>
+        ► Eclosión y primer vuelo <br><br>
+        Cuando los polluelos nacen, el macho es el que sale a buscar comida para todos. Después de nacer los polluelos, siguen estando bajo el cuidado de la madre por los siguientes 3 meses, hasta que tengan la fuerza suficiente para poder volar y alimentarse por sí solos; aunque el primer vuelo lo harán al mes y medio de haber nacido.
+        Cabe destacar que el halcón es monógamo, quiere decir que conserva la misma pareja de por vida, y otro dato curioso es que al momento de reproducirse, acostumbra a hacerlo en el mismo territorio año tras año.
+      </h3>
+
+      <h2 class="subtittle">Principales depredadores del halcón</h2>
+      <h3 class="info">
+      Debido a su gran habilidad y velocidad en el aire, existen pocos enemigos para el halcón; pero como cualquier otro animal, hay algunos depredadores a los cuales debe temer.
+      Uno de ellos es el águila. Esta ave representa un peligro para ellos, especialmente para los polluelos, y aunque sea difícil de creer, los propios halcones son una amenaza entre sí; ya que al ser animales solitarios, si se sienten amenazados tienden a atacar, sobre todo si es para defender su territorio de intrusos.
+      Pero entre sus depredadores, el más temible es el búho cornudo grande, ya que éste aprovecha la puesta del sol para cazar tanto a los polluelos como a los adultos.
+      Además de ello, existen una gran variedad de mamíferos que se alimentan especialmente de los huevos y de las crías de halcón. Entre esos depredadores están: las ratas, los lobos e incluso las serpientes.
+      La caza y la contaminación están acabando con muchas especies. En los años 1900, un pesticida químico llamado DDT, fue utilizado para eliminar la plaga en los cultivos. Ese químico fue ingerido por insectos y roedores que, a su vez, fueron comidos por otros animales, y así sucesivamente. Ese fue el caso de los halcones que, debido a ese pesticida, desaparecieron del este de Mississippi en 1965.
+      </h3>
+      <img class="imginline" src="../imagenes/halcon/halcon depredador.jpeg" alt="Depredador" >
+    </article>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    const total = items.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      items.forEach((item, i) => {
+        const relativeIndex = (i - currentIndex + total) % total;
+
+        switch (relativeIndex) {
+          case 0:
+            item.style.transform = 'translate(-50%, -50%) translateX(-220px) scale(0.9) rotateY(30deg)';
+            item.style.zIndex = 1;
+            item.style.opacity = 0.6;
+            break;
+          case 1:
+            item.style.transform = 'translate(-50%, -50%) translateX(0px) scale(1.2) rotateY(0deg)';
+            item.style.zIndex = 3;
+            item.style.opacity = 1;
+            break;
+          case 2:
+            item.style.transform = 'translate(-50%, -50%) translateX(220px) scale(0.9) rotateY(-30deg)';
+            item.style.zIndex = 2;
+            item.style.opacity = 0.6;
+            break;
+          default:
+            item.style.transform = 'translate(-50%, -50%) scale(0.5)';
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
+        }
+      });
+      currentIndex = (currentIndex + 1) % total;
+    }
+
+    updateCarousel();
+    setInterval(updateCarousel, 3000);
+  </script>
+</body>
+</html>
+</body>
+</html>
