@@ -23,28 +23,28 @@ function index(){
     window.location.href="../index.html";
 }
 function capibara(){
-    window.location.href="../html/capibara.html";
+    window.location.href="html/capibara.html";
 }
 function huron(){
-    window.location.href="../html/huron.html";
+    window.location.href="html/huron.html";
 }
 function conejo(){
-    window.location.href="../html/conejo.html";
+    window.location.href="html/conejo.html";
 }
 function pato(){
-    window.location.href="../html/pato.html";
+    window.location.href="html/pato.html";
 }
 function gato(){
-    window.location.href="../html/gato.html";
+    window.location.href="html/gato.html";
 }
 function bengala(){
-    window.location.href="../html/tigre.html";
+    window.location.href="html/tigre.html";
 }
 function ornitorrinco(){
-    window.location.href="../html/ornitorrinco.html";
+    window.location.href="html/ornitorrinco.html";
 }
 function ballena(){
-    window.location.href="../html/ballena.html";
+    window.location.href="html/ballena.html";
 }
 function tiburones(){
     window.location.href="../html/tiburones.html";
