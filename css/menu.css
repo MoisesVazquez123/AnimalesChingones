@@ -1,0 +1,59 @@
+menu img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+menu img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+menu{
+    box-sizing: border-box;
+    padding: 5px;
+    background-color:#201d27 ;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    color: #f2f2f2;
+    font-size: 10px;
+}
+.index{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.linemenu{
+width: 3px;
+height: 30px;
+border-radius: 8px;
+background-color: #f2f2f2;
+}
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  padding: 10px;
+  background-color: #201d27;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scroll-up {
+  bottom: 80px;
+}
+
+#scroll-down {
+  bottom: 20px;
+}
+
+.scroll-btn:hover {
+  background-color: #3b3647;
+}
